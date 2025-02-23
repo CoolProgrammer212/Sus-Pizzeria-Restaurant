@@ -10,15 +10,28 @@
     <style>
         body{
             align-content: center;
+            background-image: linear-gradient(to bottom, gold, darkviolet);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+        .blink {
+                animation: blinker 1.5s linear infinite;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+
     </style>
 </head>
 <body>
-    <h1>~~Welcome to Sus Pizzeria!~~</h1><br><br><br>
+    <marquee class="blink" behavior="scroll" scrollamount="18" direction="right"><h1>~~Welcome to Sus Pizzeria!~~</h1><br><br><br></marquee>
     <big>
         Description of the Restaurant: Sus Pizzeria was founded in the backrooms on 13 June 1954. This restaurant has 69 outlets and specialises in pizzas. It is also reknowned for its kinda cheap menu. [:O]<br><br><br>
         Description of our Star Chef:  Our star chef, Impasta was born in Cleveland, Ohio on 18 August 1969. He specialises in Sussitalian Cuisine.<br><br><br>
-        <i>[Note: The making of this restaurant was inspired by the game 'Among Us']</i>
+        <i class="blink">[Note: The making of this restaurant was inspired by the game 'Among Us']</i>
     </big>
     <h2>
         ~~Menu~~
@@ -138,9 +151,9 @@
         Lite Combo.............$1-$420<br>
         Foodie Combo..........$13-$420<br>
     </big>
-    <h3>
+    <h2>
         Custom Pizza Selection
-    </h3>
+    </h2>
     <big>
     <form>
         <label>Select a pizza base</label><br><br><br>
